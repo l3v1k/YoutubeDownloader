@@ -155,7 +155,7 @@ class YoutubeDownloader
 
 		$filename = $this->pathSafeFilename($result['title']);
 
-		if (isset($data['ps']) && $data['ps']='live')
+		if (isset($data['ps']) && $data['ps'] == 'live')
 		{
 			if (!isset($data['hlsvp']))
 				throw new YoutubeException('This live event is over.', 2);
